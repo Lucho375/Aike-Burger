@@ -236,7 +236,7 @@ legend {
 
 .bgfoto::after{ 
     content: "";
-    background-image: url(/assets/img/local.jpg);
+    background-image: url(../assets/img/local.jpg);
     position: absolute;
     top: 0;
     right: 0;

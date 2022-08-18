@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: #9C9C9C;
 }
 
 /*-----------BARRA DE NAVEGACION-----------*/
@@ -26,9 +26,11 @@ body {
 
 .nav-item{
     font-size: 1.3rem;
+    font-weight: bold;
 }
 li>a.active{
-    background-color: #2F4858 !important;
+    background-color: #edb026 !important;
+    border-radius: 10px;
 }
 /*-----------------------------------------*/
 
@@ -41,12 +43,19 @@ li>a.active{
     width: 20rem;
     height: 20rem;
 }
+.header{
+    background-color: #000 !important;
+}
 
 h1 , h2 {
     margin: 20px auto 20px auto;
     background-color: #edb026;
     max-width: max-content;
     text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 /*--PRODUCTOS--*/
@@ -246,7 +255,9 @@ legend {
 /*-----------FOOTER-----------*/
 
 .footer {
-    background-color: #2F4858;
+    /* background-color: #2F4858; */
+    /* background-color: #edb026; */
+    background-color: #4D4D4D;
     width: 100%;
     text-align: center;
 }

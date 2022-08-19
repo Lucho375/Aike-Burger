@@ -17,9 +17,9 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-md bg-warning navbar-dark fixed-top header">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./assets/img/logo.jpg" style="border-radius: 10px;"width="140px" height="80px"
+        <nav style="height: 120px;" class="navbar navbar-expand-md bg-warning navbar-dark fixed-top header">
+            <div class="container-fluid header">
+                <a class="navbar-brand" href="#"><img src="./assets/img/logo.jpg" width="140px" height="80px"
                         alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar">
@@ -49,57 +49,48 @@
     </header>
 
     <main class="main bgfoto">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <!-- img-fluid h-50 w-25 -->
+        <div class="jumbotron mt-4 mb-4 p-3">
+            <h1>Bienvenidos a Aike Burger</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere praesentium dolor aspernatur commodi porro neque, harum officiis nam perferendis iste numquam sunt temporibus veniam perspiciatis quis quasi quia explicabo? Nisi tenetur quibusdam quae dolorum ipsum illo odit sapiente consequatur. Tenetur dignissimos eos saepe quisquam quaerat numquam pariatur iure voluptatem voluptas.</p>
+        </div>
+
+        <!-- CAROUSEL -->
+        <div id="carouselExampleFade"
+            class="carousel slide carousel-fade col-sm-8 col-lg-8 col-xxl-6 mx-auto col-xl-8 col-md-10"
+            data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./assets/img/04_SWEET ONION.png" style="border-radius: 10px;" class="d-block  mx-auto imgc" alt="...">
+                    <img src="./assets/img/img1.jpg" class="d-block w-75 mx-auto" height="500px" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/img/07_PROVOLONE.png" style="border-radius: 10px;" class="d-block mx-auto imgc" alt="...">
+                    <img src="./assets/img/img6.jpg" class="d-block w-75 mx-auto" height="500px" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/img/05_14 DE AIKE.png" style="border-radius: 10px;" class="d-block mx-auto imgc" alt="...">
+                    <img src="./assets/img/img8.jpg" class="d-block w-75 mx-auto" height="500px" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+
+            <!-- BOTONES ANTERIOR/SIGUIENTE -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+            <!-- BOTONES ANTERIOR/SIGUIENTE -->
+
         </div>
-        <!-- <section class="mainsec bordes flex-container">
-            <h1 class="h1">Bienvenidos a Aike Burger</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nesciunt ad molestias a neque
-                repudiandae
-                voluptatum at culpa nisi molestiae saepe deleniti fugit officiis odio tenetur minima sunt rerum, natus
-                voluptates? Ducimus distinctio sit incidunt eaque corrupti vel alias! Saepe enim totam, laudantium ut
-                repudiandae molestias, magni consequatur minus hic quis molestiae dignissimos eos, dolore et vel ipsa
-                voluptatum
-                est nam. Deserunt ipsum cumque quod vero, tenetur saepe incidunt, animi odit ex nesciunt voluptas. Non
-                quia
-                harum velit vitae placeat soluta maiores sunt suscipit porro asperiores, cupiditate tempora impedit
-                voluptate
-                repellendus ullam perferendis eveniet? Consequatur ipsam facilis odit magnam labore?</p>
-            <div>
-                <iframe
-                    src="https://media.istockphoto.com/videos/making-a-hamburger-with-falling-barbecued-beef-patty-cheddar-cheese-video-id1296053493"
-                    frameborder="0"></iframe>
-            </div>
-        </section> -->
+        <!-- FIN CAROUSEL -->
+
+        <div class="jumbotron mt-4 mb-4 p-3">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, quae.</p>
+        </div>
+
     </main>
 
     <footer class="footer">

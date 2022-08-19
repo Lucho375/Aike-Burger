@@ -1,4 +1,4 @@
-/*FONT TYPE IMPORT*/
+/*FUENTE*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 /*----------------*/
 
@@ -33,6 +33,21 @@ body {
     z-index: -1;
 }
 
+.flex-container {
+    display: flex;
+}
+
+h1,
+h2 {
+    margin: 20px auto 20px auto;
+    background-color: #edb026;
+    max-width: max-content;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
 /*-----------BARRA DE NAVEGACION-----------*/
 .header {
@@ -58,7 +73,7 @@ li>a.active {
     border-radius: 10px;
 }
 
-/*-----------------------------------------*/
+/*-------------FIN DE BARRA------------*/
 
 /*-----------CONTENIDO PRINCIPAL-----------*/
 .main {
@@ -76,18 +91,7 @@ li>a.active {
 .carousel-item img {
     border-radius: 1.5rem;
 }
-
-h1,
-h2 {
-    margin: 20px auto 20px auto;
-    background-color: #edb026;
-    max-width: max-content;
-    text-align: center;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
+/* FIN contenido principal */
 
 /*--PRODUCTOS--*/
 .bordes {
@@ -105,12 +109,20 @@ h2 {
 
 /*-----------------------------------------*/
 
+/*NOSOTROS*/
 .nosotros {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.mapvid {
+    width: 40rem;
+    height: 18rem;
+}
+/* FIN NOSOTROS*/
+
+/* CONTACTO */
 #send {
     background-color: #edb026;
     font-weight: bold;
@@ -140,6 +152,17 @@ h2 {
     padding: 3px;
 }
 
+#message {
+    margin-top: 10px;
+    border: #edb026 1px solid;
+    color: white;
+    background-color: #2A2929;
+    border-radius: 5px;
+    padding: 5px;
+}
+/* FIN DE CONTACTO */
+
+
 .btn {
     background-color: #edb026 !important;
     font-weight: bold;
@@ -149,15 +172,7 @@ h2 {
     background-color: #2A2929 !important;
 }
 
-#message {
-    margin-top: 10px;
-    border: #edb026 1px solid;
-    color: white;
-    background-color: #2A2929;
-    border-radius: 5px;
-    padding: 5px;
-}
-
+/* GALERIA */
 .fotos {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -211,14 +226,7 @@ h2 {
     background-image: url(../assets/img/img8.jpg);
 }
 
-.flex-container {
-    display: flex;
-}
-
-.mapvid {
-    width: 40rem;
-    height: 18rem;
-}
+/* FIN DE GALERIA */
 
 
 /*-----------FOOTER-----------*/
@@ -254,8 +262,9 @@ h2 {
     color: #04D944
 }
 
-/*----------------------------*/
+/*-----------fin de footer-----------*/
 
+/* media query */
 @media only screen and (min-width:320px) and (max-width:649px) {
 
     .fotos {

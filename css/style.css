@@ -54,6 +54,11 @@ h2 {
     background-color: #000;
 }
 
+.icono{
+    font-size: 2rem;
+    color: #edb026;
+}
+
 .nav-link{
     color: white;
 }

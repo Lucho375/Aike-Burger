@@ -1,0 +1,52 @@
+.fotos {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: repeat(2, auto);
+    width: 100%;
+}
+
+.item {
+    border: $maincolor 1px solid;
+    border-radius: 3px;
+    height: 250px;
+    width: 250px;
+    margin: 20px auto;
+    background-size: 100% 100%;
+}
+
+.item:hover {
+    scale: 1.1;
+    transition: all 0.5s;
+}
+
+.item1 {
+    background-image: url(../assets/img/img1.jpg);
+}
+
+.item2 {
+    background-image: url(../assets/img/img2.jpg);
+}
+
+.item3 {
+    background-image: url(../assets/img/img3.jpg);
+}
+
+.item4 {
+    background-image: url(../assets/img/img4.jpg);
+}
+
+.item5 {
+    background-image: url(../assets/img/img5.jpg);
+}
+
+.item6 {
+    background-image: url(../assets/img/img6.jpg);
+}
+
+.item7 {
+    background-image: url(../assets/img/img7.jpg);
+}
+
+.item8 {
+    background-image: url(../assets/img/img8.jpg);
+}

@@ -1,0 +1,22 @@
+//--------base--------
+@import 'base/reset';
+@import 'base/typo';
+@import 'base/body';
+//--------------------
+
+//--------layout--------
+@import 'layout/header';
+@import 'layout/footer';
+//----------------------
+
+//--------views--------
+@import 'views/index';
+@import 'views/galeria';
+@import 'views/contact';
+@import 'views/nosotros';
+@import 'views/productos';
+//---------------------
+
+//--------components--------
+@import 'components/buttons';
+@import 'components/jumbo';

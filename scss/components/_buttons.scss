@@ -1,0 +1,7 @@
+.btn {
+    background-color: $maincolor !important;
+    font-weight: bold;
+    &:hover{
+        background-color: #2A2929 !important;
+    }
+}

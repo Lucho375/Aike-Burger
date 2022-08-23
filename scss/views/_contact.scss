@@ -1,0 +1,37 @@
+#send {
+    background-color: $maincolor;
+    font-weight: bold;
+}
+
+#name {
+    border: $maincolor 1px solid;
+    color: white;
+    background-color: #2A2929;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#lastname {
+    border: $maincolor 1px solid;
+    color: white;
+    background-color: #2A2929;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#emailAddress {
+    border: $maincolor 1px solid;
+    color: white;
+    border-radius: 5px;
+    background-color: #2A2929;
+    padding: 3px;
+}
+
+#message {
+    margin-top: 10px;
+    border: $maincolor 1px solid;
+    color: white;
+    background-color: #2A2929;
+    border-radius: 5px;
+    padding: 5px;
+}

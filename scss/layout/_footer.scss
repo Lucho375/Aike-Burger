@@ -1,14 +1,18 @@
 .footer {
-    background-color: #604B5D;
+    background-color: #000;
     width: 100%;
     text-align: center;
     color: white;
+    p{
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
     
     .fa-brands{
         color: white;
-        font-size: 30px;
+        font-size: 2.3rem;
         padding: 10px 0;
-        letter-spacing: 1rem;
+        letter-spacing: 0.9rem;
         &:hover{
             transition: all 1s;
             transform: scale(1.2);

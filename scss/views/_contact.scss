@@ -1,37 +1,16 @@
-#send {
-    background-color: $maincolor;
-    font-weight: bold;
+.form-control{
+    border: $maincolor 1px solid;
+    background-color: #2A2929;
+    color: white;
+    
 }
 
-#name {
-    border: $maincolor 1px solid;
-    color: white;
-    background-color: #2A2929;
-    border-radius: 5px;
-    padding: 3px;
+input{
+    color: white !important;
+    background-color: #2A2929 !important;
 }
 
-#lastname {
-    border: $maincolor 1px solid;
-    color: white;
-    background-color: #2A2929;
-    border-radius: 5px;
-    padding: 3px;
-}
-
-#emailAddress {
-    border: $maincolor 1px solid;
-    color: white;
-    border-radius: 5px;
-    background-color: #2A2929;
-    padding: 3px;
-}
-
-#message {
-    margin-top: 10px;
-    border: $maincolor 1px solid;
-    color: white;
-    background-color: #2A2929;
-    border-radius: 5px;
-    padding: 5px;
+textarea{
+    background-color: #2A2929 !important;
+    color: white !important;
 }

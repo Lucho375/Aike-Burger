@@ -209,7 +209,7 @@ textarea {
     height: 18rem;
   }
   .slide img {
-    height: 25vh;
+    height: 35vh;
   }
 }
 @media only screen and (min-width: 650px) and (max-width: 1023px) {

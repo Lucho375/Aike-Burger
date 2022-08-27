@@ -194,6 +194,7 @@ textarea {
 
 .jumbotron {
   background-color: rgba(19, 16, 8, 0.7411764706);
+  border-radius: 5px;
 }
 .jumbotron p {
   text-align: center;

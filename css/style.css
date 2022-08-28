@@ -6,7 +6,8 @@
 }
 
 h1,
-h2 {
+h2,
+h3 {
   margin: 20px auto 20px auto;
   background-color: #edb026;
   max-width: max-content;
@@ -184,6 +185,39 @@ textarea {
   background-color: #000;
 }
 
+.prod {
+  display: flex;
+  margin-bottom: 20px;
+  border: 2px solid #edb026;
+  border-radius: 3px;
+  flex-grow: 1;
+  padding: 10px;
+}
+.prod img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  margin-left: 4px;
+}
+.prod h4 {
+  font-weight: 700;
+}
+.prod p {
+  font-size: 13px;
+}
+.prod a {
+  color: white;
+  font-size: 16px;
+}
+.prod a .precio {
+  background-color: #edb026;
+  width: 100px;
+  border-radius: 3px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
 .btn {
   background-color: #edb026 !important;
   font-weight: bold;
@@ -212,6 +246,57 @@ textarea {
   .slide img {
     height: 35vh;
   }
+  .prod {
+    display: flex;
+    margin-bottom: 20px;
+    border: 2px solid #edb026;
+    border-radius: 3px;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .prod img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-left: 4px;
+  }
+  .prod h4 {
+    font-weight: 700;
+  }
+  .prod p {
+    font-size: 13px;
+  }
+  .prod a {
+    color: white;
+    font-size: 16px;
+  }
+  .prod a .precio {
+    background-color: #edb026;
+    width: 100px;
+    border-radius: 3px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 567px) and (max-width: 668px) {
+  .prod {
+    padding: 20px;
+  }
+  .prod img {
+    width: 150px;
+    height: 150px;
+  }
+  .prod p {
+    font-size: 14px;
+  }
+  .prod a .precio {
+    width: 200px;
+    padding: 5px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
 }
 @media only screen and (min-width: 650px) and (max-width: 1023px) {
   .fotos {
@@ -224,6 +309,26 @@ textarea {
   }
   .slide img {
     height: 30vh;
+  }
+}
+@media only screen and (min-width: 669px) and (max-width: 1024px) {
+  .prod {
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+  }
+  .prod img {
+    width: 200px;
+    height: 200px;
+  }
+  .prod p {
+    font-size: 16px;
+  }
+  .prod a .precio {
+    width: 300px;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 18px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -249,6 +354,50 @@ textarea {
   .mapvid {
     width: 45rem;
     height: 20rem;
+  }
+  .prod {
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto 20px auto;
+  }
+  .prod img {
+    width: 200px;
+    height: 200px;
+  }
+  .prod p {
+    font-size: 16px;
+  }
+  .prod a .precio {
+    width: 250px;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .prod {
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto 20px auto;
+  }
+  .prod img {
+    width: 200px;
+    height: 200px;
+  }
+  .prod p {
+    font-size: 20px;
+    text-align: start;
+  }
+  .prod a :hover {
+    transform: scale(1.1);
+    transition: all 1s;
+  }
+  .prod a .precio {
+    font-size: 20px;
+    text-align: center;
+    width: 300px;
   }
 }
 

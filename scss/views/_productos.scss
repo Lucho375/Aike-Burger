@@ -1,3 +1,42 @@
 .card {
     background-color: #000;
 }
+
+.prod {
+    // display: grid;
+    display: flex;
+    margin-bottom: 20px;
+    border: 2px solid $maincolor;
+    border-radius: 3px;
+    flex-grow: 1;
+    padding: 10px;
+
+    // grid-template-columns: 1fr;
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+        margin-left: 4px;
+    }
+
+    h4 {
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    a {
+        color: white;
+        font-size: 16px;
+        .precio {
+            background-color: $maincolor;
+            width: 100px;
+            border-radius: 3px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-size: 14px;
+        }
+    }
+}

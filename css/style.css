@@ -11,7 +11,6 @@ h3 {
   margin: 20px auto 20px auto;
   background-color: #edb026;
   max-width: max-content;
-  text-align: center;
   border-radius: 5px;
   padding: 10px;
   font-size: 1.5rem;
@@ -19,7 +18,7 @@ h3 {
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 body {
@@ -49,6 +48,10 @@ body::before {
 .header {
   background-color: #000;
 }
+.header .navbar-brand img {
+  width: 140px;
+  height: 80px;
+}
 .header .icono {
   font-size: 2rem;
   color: #edb026;
@@ -74,6 +77,10 @@ body::before {
   width: 100%;
   text-align: center;
   color: white;
+}
+.footer img {
+  height: 200px;
+  width: 200px;
 }
 .footer p {
   font-size: 1.3rem;
@@ -181,16 +188,11 @@ textarea {
   height: 18rem;
 }
 
-.card {
-  background-color: #000;
-}
-
 .prod {
   display: flex;
   margin-bottom: 20px;
   border: 2px solid #edb026;
   border-radius: 3px;
-  flex-grow: 1;
   padding: 10px;
 }
 .prod img {

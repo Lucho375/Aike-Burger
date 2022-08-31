@@ -1,6 +1,11 @@
 @import '../utilities/variables';
 .header {
     background-color: #000;
+    .navbar-brand img{
+        width: 140px;
+        height: 80px;
+    }
+                        
     .icono{
         font-size: 2rem;
         color: $maincolor;

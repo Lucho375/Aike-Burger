@@ -1,17 +1,10 @@
-.card {
-    background-color: #000;
-}
-
 .prod {
-    // display: grid;
     display: flex;
     margin-bottom: 20px;
     border: 2px solid $maincolor;
     border-radius: 3px;
-    flex-grow: 1;
     padding: 10px;
 
-    // grid-template-columns: 1fr;
     img {
         width: 100px;
         height: 100px;

@@ -1,0 +1,3 @@
+Mejoras del SEO
+
+- recorté imagenes, las comprimí y les di un texto en el atributo ALT.

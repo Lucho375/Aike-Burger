@@ -5,15 +5,22 @@
   box-sizing: border-box;
 }
 
-h1,
-h2,
+h1, h2 {
+  text-align: center;
+  text-decoration: underline #edb026;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 0 0 50px;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: underline #edb026;
+  font-size: 1.8rem;
+}
+
 h3 {
-  margin: 20px auto 20px auto;
-  background-color: #edb026;
-  max-width: max-content;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
@@ -22,7 +29,7 @@ p {
 }
 
 body {
-  background-color: rgba(241, 182, 163, 0.937254902);
+  background-color: grey;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -32,7 +39,7 @@ body {
   position: relative;
 }
 
-body::before {
+body::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -40,9 +47,14 @@ body::before {
   bottom: 0;
   background: url("../assets/img/local.jpg") fixed;
   background-size: cover;
-  opacity: 0.8;
+  opacity: 0.6;
   content: "";
   z-index: -1;
+}
+
+.main {
+  margin: 150px 20px 20px 20px;
+  min-height: 100vh;
 }
 
 .header {
@@ -98,11 +110,6 @@ body::before {
   color: #edb026;
 }
 
-.main {
-  margin: 100px 20px 20px 20px;
-  min-height: 100vh;
-}
-
 .carousel-item img {
   border-radius: 1.5rem;
 }
@@ -117,7 +124,7 @@ body::before {
 
 .item {
   border: #edb026 1px solid;
-  border-radius: 3px;
+  border-radius: 5px;
   height: 250px;
   width: 250px;
   margin: 20px auto;
@@ -201,11 +208,8 @@ textarea {
   border-radius: 5px;
   margin-left: 4px;
 }
-.prod h4 {
-  font-weight: 700;
-}
 .prod p {
-  font-size: 13px;
+  font-size: 0.9rem;
 }
 .prod a {
   color: white;

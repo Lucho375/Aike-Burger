@@ -1,0 +1,5 @@
+@import 'variables';
+@mixin centrarTitulos{
+    text-align: center;
+    text-decoration: underline $maincolor;
+}

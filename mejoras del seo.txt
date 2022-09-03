@@ -4,3 +4,4 @@ Mejoras del SEO
 - Estructuré la pagina con titulos h1 h2 y h3.
 - Agregué etiquetas meta description y keywords a todas las paginas.
 - Cambié los titulos de las paginas.
+- Las paginas estan 100% responsive.

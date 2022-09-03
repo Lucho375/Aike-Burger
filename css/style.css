@@ -196,15 +196,23 @@ textarea {
   color: white !important;
 }
 
+.encontranos {
+  margin-top: 10rem;
+}
+.encontranos .mapa {
+  width: 100%;
+  height: 20rem;
+}
+
 .nosotros {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.mapvid {
-  width: 40rem;
-  height: 18rem;
+.vid {
+  width: 60rem;
+  height: 20rem;
 }
 
 .prod {
@@ -271,7 +279,7 @@ textarea {
     padding: 3px;
     margin: 5px;
   }
-  .mapvid {
+  .vid {
     width: 20rem;
     height: 18rem;
   }
@@ -344,7 +352,7 @@ textarea {
     padding: 3px;
     margin: 5px;
   }
-  .mapvid {
+  .vid {
     width: 30rem;
     height: 18rem;
   }
@@ -409,7 +417,7 @@ textarea {
     padding: 3px;
     margin: 5px;
   }
-  .mapvid {
+  .vid {
     width: 45rem;
     height: 20rem;
   }

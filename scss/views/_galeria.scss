@@ -1,53 +1,65 @@
-.fotos {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: repeat(2, auto);
+.galeria > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0 , 0, 0, .5);
+}
+
+.galeria a:hover img{
+    filter: grayscale(1);
+    transition: filter 0.3s;
+}
+
+.efectogaleria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    margin-top: 140px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.5) ;
+    transition: transform .5s ease-in-out;
+    transform: scale(0);
+    z-index: 1000;
 }
 
-.item {
-    border: $maincolor 1px solid;
+.efectogaleria img{
+    width: 80vw;
+    max-height: 70vh;
+}
+
+.efectogaleria:target{
+    transform: scale(1);
+}
+
+.close{
+    display: block;
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    background: $maincolor;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.next{
+    display: block;
+    text-align: center;
+    background: $maincolor;
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+}
+
+.foto{
+    width: 100%;
     border-radius: 5px;
-    height: 250px;
-    width: 250px;
-    margin: 20px auto;
-    background-size: 100% 100%;
-}
-
-.item:hover {
-    scale: 1.1;
-    transition: all 0.5s;
-}
-
-.item1 {
-    background-image: url(../assets/img/img1.jpg);
-}
-
-.item2 {
-    background-image: url(../assets/img/img2.jpg);
-}
-
-.item3 {
-    background-image: url(../assets/img/img3.jpg);
-}
-
-.item4 {
-    background-image: url(../assets/img/img4.jpg);
-}
-
-.item5 {
-    background-image: url(../assets/img/img5.jpg);
-}
-
-.item6 {
-    background-image: url(../assets/img/img6.jpg);
-}
-
-.item7 {
-    background-image: url(../assets/img/img7.jpg);
-}
-
-.item8 {
-    background-image: url(../assets/img/img8.jpg);
+    object-fit: cover;
+    vertical-align: top;
+    transition: transform 0.5s;
 }

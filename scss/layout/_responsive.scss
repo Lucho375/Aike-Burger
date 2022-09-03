@@ -1,8 +1,25 @@
 @media only screen and (min-width:320px) and (max-width:649px) {
 
-    .fotos {
-        grid-template-columns: auto;
-        grid-template-rows: repeat(8, auto);
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, auto);
+        row-gap: 20px;
+    }
+
+    .efectogaleria img{
+        height: 25vh;
+    }
+
+    .close{
+        top: 120px;
+        right: 20px;
+        padding: 10px;
+    }
+    
+    .next{
+        padding: 3px;
+        margin: 5px;
     }
 
     .mapvid {
@@ -79,9 +96,21 @@
 }
 
 @media only screen and (min-width:650px) and (max-width:1023px) {
-    .fotos {
-        grid-template-columns: auto auto;
-        grid-template-rows: repeat(4, auto);
+    
+    .efectogaleria img{
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .close{
+        top: 120px;
+        right: 20px;
+        padding: 10px;
+    }
+    
+    .next{
+        padding: 3px;
+        margin: 5px;
     }
 
     .mapvid {
@@ -91,6 +120,22 @@
 
     .slide img {
         height: 30vh;
+    }
+
+    .galeria{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, auto);
+        row-gap: 20px;
+        column-gap: 20px;
+
+        .foto9{
+            grid-column: 1/3;
+            width: 75%;
+            height: 300px;
+            margin: 0 auto;
+        }
     }
 }
 
@@ -133,15 +178,21 @@
 }
 
 @media only screen and (min-width:1024px) and (max-width:1300px) {
-    .fotos {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        gap: 30px;
+
+    .efectogaleria img{
+        width: 100vw;
+        height: 60vh;
     }
 
-    .item {
-        width: 100%;
-        height: 20rem;
+    .close{
+        top: 120px;
+        right: 20px;
+        padding: 10px;
+    }
+    
+    .next{
+        padding: 3px;
+        margin: 5px;
     }
 
     .mapvid {
@@ -169,6 +220,13 @@
             width: 250px;
             font-size: 20px;
         }
+    }
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, auto);
+        row-gap: 20px;
+        column-gap: 20px;
     }
 }
 
@@ -203,5 +261,12 @@
                 width: 300px;
             }
         }
+    }
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, auto);
+        row-gap: 20px;
+        column-gap: 20px;
     }
 }

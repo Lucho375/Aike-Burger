@@ -95,7 +95,7 @@ body::after {
   width: 200px;
 }
 .footer p {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 .footer .fa-brands {
@@ -246,7 +246,7 @@ textarea {
 
 .jumbotron {
   background-color: rgba(19, 16, 8, 0.7411764706);
-  border-radius: 5px;
+  border-radius: 6px;
 }
 .jumbotron p {
   text-align: center;

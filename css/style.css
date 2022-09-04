@@ -61,8 +61,8 @@ body::after {
   background-color: #000;
 }
 .header .navbar-brand img {
-  width: 140px;
-  height: 80px;
+  width: auto;
+  height: 100px;
 }
 .header .icono {
   font-size: 2rem;

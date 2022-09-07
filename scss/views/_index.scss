@@ -8,23 +8,10 @@
     height: 220px;
     margin-bottom: 0;
 }
-.ubicacion{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 50px;
-    background-color: #000;
+
+.mainfoto{
+    width: 100%;
     border-radius: 5px;
-    h3{
-        color: $maincolor;
-    }
-}
-.btn--dire{
-    a{
-        text-decoration: none;
-        color: white;
-        padding: 5px;
-    }
 }
 
 .takeaway{
@@ -41,9 +28,39 @@
     }
 }
 
-.mainfoto{
+.btn_pedir{
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+    }
     width: 100%;
+    padding: 20px;
+}
+
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    background-color: #000;
     border-radius: 5px;
+    h3{
+        color: $maincolor;
+    }
+}
+
+.fa-burger{
+    font-size: 80px;
+    padding-bottom: 20px;
+}
+
+.btn--dire{
+    a{
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+    }
 }
 
 .flex{
@@ -54,19 +71,6 @@
         
         font-style: italic;
     }
-}
-.btn_pedir{
-    a{
-        text-decoration: none;
-        color: white;
-        font-size: 22px;
-    }
-    width: 100%;
-    padding: 20px;
-}
-.fa-burger{
-    font-size: 80px;
-    padding-bottom: 20px;
 }
 
 .horarios{

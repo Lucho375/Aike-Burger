@@ -121,22 +121,9 @@ body::after {
   margin-bottom: 0;
 }
 
-.ubicacion {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 50px;
-  background-color: #000;
+.mainfoto {
+  width: 100%;
   border-radius: 5px;
-}
-.ubicacion h3 {
-  color: #edb026;
-}
-
-.btn--dire a {
-  text-decoration: none;
-  color: white;
-  padding: 5px;
 }
 
 .takeaway {
@@ -153,20 +140,6 @@ body::after {
   font-weight: bold;
 }
 
-.mainfoto {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-}
-.flex h5 {
-  font-weight: bold;
-  font-style: italic;
-}
-
 .btn_pedir {
   width: 100%;
   padding: 20px;
@@ -177,9 +150,36 @@ body::after {
   font-size: 22px;
 }
 
+.ubicacion {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px;
+  background-color: #000;
+  border-radius: 5px;
+}
+.ubicacion h3 {
+  color: #edb026;
+}
+
 .fa-burger {
   font-size: 80px;
   padding-bottom: 20px;
+}
+
+.btn--dire a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.flex h5 {
+  font-weight: bold;
+  font-style: italic;
 }
 
 .horarios {

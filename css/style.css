@@ -110,8 +110,95 @@ body::after {
   color: #edb026;
 }
 
-.carousel-item img {
-  border-radius: 1.5rem;
+.tituloPrincipal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  background: #000;
+  border-radius: 5px;
+  height: 220px;
+  margin-bottom: 0;
+}
+
+.ubicacion {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px;
+  background-color: #000;
+  border-radius: 5px;
+}
+.ubicacion h3 {
+  color: #edb026;
+}
+
+.btn--dire a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+.takeaway {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  background-color: #000;
+}
+.takeaway p {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 20px;
+  font-weight: bold;
+}
+
+.mainfoto {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.flex h5 {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.btn_pedir {
+  width: 100%;
+  padding: 20px;
+}
+.btn_pedir a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+}
+
+.fa-burger {
+  font-size: 80px;
+  padding-bottom: 20px;
+}
+
+.horarios {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 20px;
+}
+
+.horarios2 {
+  padding: 10px;
+  background-color: #edb026;
+  border-radius: 5px;
+  color: #000;
+  width: 500px;
+}
+.horarios2 h4 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .galeria > a {
@@ -202,6 +289,7 @@ textarea {
 .encontranos .mapa {
   width: 100%;
   height: 20rem;
+  border-radius: 5px;
 }
 
 .nosotros {
@@ -264,6 +352,41 @@ textarea {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 649px) {
+  .tituloPrincipal {
+    font-size: 3rem;
+  }
+  .mainfoto {
+    height: 200px;
+  }
+  .takeaway {
+    height: 180px;
+  }
+  .takeaway p {
+    font-size: 1rem;
+    letter-spacing: 15px;
+    text-align: center;
+  }
+  .horarios2 h4 {
+    font-size: 1rem;
+  }
+  .horarios2 h5 {
+    font-size: 0.9rem;
+  }
+  .ubicacion .fa-burger {
+    font-size: 2rem;
+  }
+  .ubicacion h2 {
+    font-size: 1rem;
+  }
+  .ubicacion h3 {
+    font-size: 0.9rem;
+  }
+  .ubicacion div p {
+    font-size: 0.8rem;
+  }
+  .ubicacion .btn--dire {
+    font-size: 1rem;
+  }
   .galeria {
     display: grid;
     grid-template-columns: 1fr;
@@ -285,9 +408,6 @@ textarea {
   .vid {
     width: 20rem;
     height: 18rem;
-  }
-  .slide img {
-    height: 35vh;
   }
   .prod {
     display: flex;
@@ -359,9 +479,6 @@ textarea {
     width: 30rem;
     height: 18rem;
   }
-  .slide img {
-    height: 30vh;
-  }
   .galeria {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -394,16 +511,6 @@ textarea {
     padding: 5px;
     font-weight: 700;
     font-size: 18px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  .slide img {
-    height: 50vh;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-  .slide img {
-    height: 55vh;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1300px) {

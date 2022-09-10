@@ -132,6 +132,7 @@ body::after {
   align-items: center;
   height: 220px;
   background-color: #000;
+  border-radius: 5px;
 }
 .takeaway p {
   color: white;

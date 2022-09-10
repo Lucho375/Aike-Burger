@@ -1,3 +1,94 @@
-.carousel-item img {
-    border-radius: 1.5rem;
+.tituloPrincipal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    background: #000;
+    border-radius: 5px;
+    height: 220px;
+    margin-bottom: 0;
+}
+
+.mainfoto{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.takeaway{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    background-color: #000;
+    border-radius: 5px;
+    p{
+        color: white;
+        font-size: 40px;
+        letter-spacing: 20px;
+        font-weight: bold;
+    }
+}
+
+.btn_pedir{
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+    }
+    width: 100%;
+    padding: 20px;
+}
+
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    background-color: #000;
+    border-radius: 5px;
+    h3{
+        color: $maincolor;
+    }
+}
+
+.fa-burger{
+    font-size: 80px;
+    padding-bottom: 20px;
+}
+
+.btn--dire{
+    a{
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+    }
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    h5{
+        font-weight: bold;
+        
+        font-style: italic;
+    }
+}
+
+.horarios{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px;
+}
+
+.horarios2{
+    h4{
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    padding: 10px;
+    background-color: $maincolor;
+    border-radius: 5px;
+    color: #000;
+    width: 500px;
 }

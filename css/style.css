@@ -54,7 +54,19 @@ body::after {
 
 .main {
   margin: 150px 20px 20px 20px;
-  min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(237, 177, 38, 0.7803921569);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(42, 41, 41, 0.7960784314);
+  border-radius: 1px;
 }
 
 .header {
@@ -294,16 +306,125 @@ textarea {
 
 .nosotros {
   display: flex;
+}
+.nosotros .nosotros--texto {
+  display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 50px;
+  border-radius: 5px;
+}
+.nosotros .nosotros--texto h2 {
+  margin-bottom: 15px;
+}
+.nosotros .nosotros--texto p {
+  font-size: 1rem;
+}
+.nosotros .nosotros--foto {
+  width: 50%;
+  justify-content: center;
+}
+.nosotros .nosotros--foto img {
+  width: 100%;
+  height: 500px;
+  border-radius: 5px;
 }
 
-.vid {
-  margin-top: 40px;
-  width: 60rem;
-  border-radius: 8px;
-  height: 28rem;
-  object-fit: cover;
+.rrhh {
+  background: url(https://cdn.pixabay.com/photo/2016/03/05/19/02/vegetables-1238252_960_720.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  padding: 50px;
+  display: flex;
+}
+.rrhh .rrhh-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 50%;
+}
+.rrhh .rrhh-div div {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.rrhh form {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.rrhh form .fieldset {
+  text-align: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.rrhh form .fieldset label {
+  border-radius: 5px;
+}
+.rrhh form .fieldset input {
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 5px black;
+  border: none;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+.rrhh form .fieldset input::placeholder {
+  color: white;
+}
+.rrhh form .fieldset input:focus::placeholder {
+  color: transparent;
+}
+.rrhh form .fieldset #send {
+  margin-top: 10px;
+  transition: all 0.3s;
+}
+.rrhh form .fieldset #send:hover {
+  scale: 1.05;
+  background-color: #edb026 !important;
+}
+.rrhh form .fieldset #reset {
+  transition: all 0.3s;
+}
+.rrhh form .fieldset #reset:hover {
+  scale: 1.05;
+  background-color: #edb026 !important;
+}
+.rrhh form .fieldset textarea {
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px black;
+}
+.rrhh form .fieldset textarea::placeholder {
+  color: white;
+}
+.rrhh form .fieldset textarea:focus::placeholder {
+  color: transparent;
+}
+.rrhh form .fieldset label {
+  cursor: pointer;
+  background-color: #2a2929;
+  padding: 5px;
+  margin: 10px 0 0;
+  box-shadow: 5px 5px 5px black;
+}
+.rrhh form .fieldset label:hover {
+  scale: 1.05;
+  background-color: #edb026 !important;
+  transition: scale 0.3s;
+}
+.rrhh form .fieldset .file {
+  display: none;
 }
 
 .prod {
@@ -425,13 +546,6 @@ textarea {
     padding: 3px;
     margin: 5px;
   }
-  .vid {
-    width: 20rem;
-    height: 18rem;
-  }
-  .slide img {
-    height: 35vh;
-  }
   .prod {
     display: flex;
     margin-bottom: 20px;
@@ -463,6 +577,47 @@ textarea {
     font-weight: 700;
     letter-spacing: 1px;
     font-size: 14px;
+  }
+  .nosotros {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nosotros .nosotros--texto {
+    width: 100%;
+    padding: 50px;
+  }
+  .nosotros .nosotros--texto h2 {
+    font-size: 1.5rem;
+  }
+  .nosotros .nosotros--texto p {
+    font-size: 0.8rem;
+  }
+  .nosotros .nosotros--foto {
+    width: 100%;
+  }
+  .nosotros .nosotros--foto img {
+    height: 250px;
+  }
+  .rrhh {
+    flex-direction: column;
+    padding: 0;
+  }
+  .rrhh .rrhh-div {
+    width: 100%;
+  }
+  .rrhh .rrhh-div div h3 {
+    font-size: 1rem;
+  }
+  .rrhh .rrhh-div div p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .rrhh form {
+    width: 100%;
+    padding: 0;
+  }
+  .rrhh form fieldset {
+    width: 75% !important;
   }
 }
 @media only screen and (min-width: 567px) and (max-width: 668px) {
@@ -502,9 +657,6 @@ textarea {
     width: 30rem;
     height: 18rem;
   }
-  .slide img {
-    height: 30vh;
-  }
   .galeria {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -517,6 +669,39 @@ textarea {
     width: 75%;
     height: 300px;
     margin: 0 auto;
+  }
+  .rrhh {
+    flex-direction: column;
+    padding: 0;
+  }
+  .rrhh .rrhh-div {
+    width: 100%;
+  }
+  .rrhh .rrhh-div div h3 {
+    font-size: 1rem;
+  }
+  .rrhh .rrhh-div div p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .rrhh form {
+    width: 100%;
+    padding: 0;
+  }
+  .rrhh form fieldset {
+    width: 75% !important;
+  }
+}
+@media only screen and (min-width: 650px) and (max-width: 870px) {
+  .nosotros .nosotros--texto {
+    height: 350px;
+    padding: 20px;
+  }
+  .nosotros .nosotros--texto p {
+    font-size: 0.8rem;
+  }
+  .nosotros .nosotros--foto img {
+    height: 350px;
   }
 }
 @media only screen and (min-width: 669px) and (max-width: 1024px) {
@@ -581,6 +766,25 @@ textarea {
     grid-template-rows: repeat(4, auto);
     row-gap: 20px;
     column-gap: 20px;
+  }
+  .rrhh {
+    padding: 40px;
+  }
+  .rrhh .rrhh-div {
+    width: 100%;
+  }
+  .rrhh .rrhh-div div h3 {
+    font-size: 1.1rem;
+  }
+  .rrhh .rrhh-div div p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .rrhh form {
+    width: 100%;
+  }
+  .rrhh form fieldset {
+    width: 75% !important;
   }
 }
 @media only screen and (min-width: 1300px) {

@@ -89,28 +89,19 @@
         row-gap: 20px;
     }
 
-    .efectogaleria img{
+    .efectogaleria img {
         height: 25vh;
     }
 
-    .close{
+    .close {
         top: 120px;
         right: 20px;
         padding: 10px;
     }
-    
-    .next{
+
+    .next {
         padding: 3px;
         margin: 5px;
-    }
-
-    .vid {
-        width: 20rem;
-        height: 18rem;
-    }
-
-    .slide img {
-        height: 35vh;
     }
 
     .prod {
@@ -150,6 +141,54 @@
             }
         }
     }
+
+    .nosotros {
+        flex-direction: column;
+        align-items: center;
+
+        .nosotros--texto {
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            width: 100%;
+            padding: 50px;
+
+            p {
+                font-size: 0.8rem;
+            }
+        }
+
+        .nosotros--foto {
+            width: 100%;
+            img{
+                height: 250px;
+            }
+        }
+    }
+    .rrhh{
+        flex-direction: column;
+        padding: 0;
+        .rrhh-div{
+            width: 100%;
+            div{
+                h3{
+                    font-size: 1rem;
+                }
+                p{
+                    font-size: 0.8rem;
+                    text-align: center;
+                }
+            }
+        }
+        form{
+            width: 100%;
+            padding: 0;
+            fieldset{
+                width: 75% !important;
+            }
+        }
+    }
 }
 
 @media only screen and (min-width:567px) and (max-width:668px) {
@@ -178,19 +217,19 @@
 }
 
 @media only screen and (min-width:650px) and (max-width:1023px) {
-    
-    .efectogaleria img{
+
+    .efectogaleria img {
         width: 100vw;
         height: 40vh;
     }
 
-    .close{
+    .close {
         top: 120px;
         right: 20px;
         padding: 10px;
     }
-    
-    .next{
+
+    .next {
         padding: 3px;
         margin: 5px;
     }
@@ -200,11 +239,7 @@
         height: 18rem;
     }
 
-    .slide img {
-        height: 30vh;
-    }
-
-    .galeria{
+    .galeria {
 
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -212,11 +247,51 @@
         row-gap: 20px;
         column-gap: 20px;
 
-        .foto9{
+        .foto9 {
             grid-column: 1/3;
             width: 75%;
             height: 300px;
             margin: 0 auto;
+        }
+    }
+    .rrhh{
+        flex-direction: column;
+        padding: 0;
+        .rrhh-div{
+            width: 100%;
+            div{
+                h3{
+                    font-size: 1rem;
+                }
+                p{
+                    font-size: 0.8rem;
+                    text-align: center;
+                }
+            }
+        }
+        form{
+            width: 100%;
+            padding: 0;
+            fieldset{
+                width: 75% !important;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:650px) and (max-width:870px) {
+    .nosotros {
+        .nosotros--texto {
+            height: 350px;
+            padding: 20px;
+            p {
+                font-size: 0.8rem;
+            }
+        }
+        .nosotros--foto{
+            img{
+                height: 350px;
+            }
         }
     }
 }
@@ -245,22 +320,23 @@
             }
         }
     }
+    
 }
 
 @media only screen and (min-width:1024px) and (max-width:1300px) {
 
-    .efectogaleria img{
+    .efectogaleria img {
         width: 100vw;
         height: 60vh;
     }
 
-    .close{
+    .close {
         top: 120px;
         right: 20px;
         padding: 10px;
     }
-    
-    .next{
+
+    .next {
         padding: 3px;
         margin: 5px;
     }
@@ -291,12 +367,35 @@
             font-size: 20px;
         }
     }
-    .galeria{
+
+    .galeria {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(4, auto);
         row-gap: 20px;
         column-gap: 20px;
+    }
+
+    .rrhh{
+        padding: 40px;
+        .rrhh-div{
+            width: 100%;
+            div{
+                h3{
+                    font-size: 1.1rem;
+                }
+                p{
+                    font-size: 0.9rem;
+                    text-align: center;
+                }
+            }
+        }
+        form{
+            width: 100%;
+            fieldset{
+                width: 75% !important;
+            }
+        }
     }
 }
 
@@ -321,10 +420,11 @@
 
 
         a {
-            :hover{
+            :hover {
                 transform: scale(1.1);
                 transition: all 1s;
             }
+
             .precio {
                 font-size: 20px;
                 text-align: center;
@@ -332,7 +432,8 @@
             }
         }
     }
-    .galeria{
+
+    .galeria {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: repeat(4, auto);

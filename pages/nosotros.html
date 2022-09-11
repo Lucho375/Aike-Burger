@@ -54,21 +54,46 @@
 
     <!-- contenido principal -->
     <main class="main">
-        <div class="jumbotron">
-            <h1>Nosotros</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, et similique aliquam at iste maxime odio
-                corrupti tenetur amet vitae quis doloribus neque rem incidunt fugit debitis porro, cum, ducimus eum
-                dolores
-                explicabo labore! Nisi odit sint ducimus atque itaque cum, earum aspernatur, rem sunt praesentium dolore
-                officia ullam mollitia, non quasi soluta exercitationem officiis recusandae illum fugit. Accusamus
-                libero
-                odio, aliquid dolor quasi repellat voluptate! Alias aliquid maiores labore, beatae vero eius
-                exercitationem
-                eaque veniam natus eum eveniet adipisci porro soluta animi facere dolorum qui distinctio rerum ipsum
-                provident quia? Possimus saepe expedita facere sint, recusandae voluptate numquam officiis.</p>
-        </div>
         <section class="nosotros">
-            <video class="vid" src="https://media.istockphoto.com/videos/lean-healthy-hamburgers-grilled-on-an-outdoor-charcoal-grill-with-video-id1206699031" loop autoplay></video>
+            <div class="nosotros--texto">
+                <h2>Sobre nosotros</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quaerat! Labore a unde expedita
+                    rem fugit voluptatibus ducimus tenetur similique et quod. Libero quas eveniet sapiente et nesciunt
+                    odio, quidem laborum laudantium temporibus veritatis corrupti, quod adipisci minima corporis
+                    dignissimos, laboriosam veniam voluptatem inventore voluptate dolores obcaecati aliquid autem
+                    tenetur.</p>
+            </div>
+            <div class="nosotros--foto">
+                <img src="https://staticfanpage.akamaized.net/wp-content/uploads/sites/22/2021/09/beef-burger-1200x675.jpg"
+                    alt="">
+            </div>
+        </section>
+        <section class="rrhh">
+            <div class="rrhh-div">
+                <div>
+                    <h3>Trabajá con nosotros</h3>
+                    <p>Queres ser parte del equipo de Aike Burger? Mandanos tu CV!</p>
+                </div>
+            </div>
+            <form action="" class="">
+                <fieldset class="fieldset">
+                    <input id="name" type="text" name="name" placeholder="Nombre">
+                    <input id="lastname" type="text" name="lastname" placeholder="Apellido">
+                    <input type="tel" name="telefono" id="" placeholder="Telefono celular">
+                    <input id="mail" type="email" name="mail" placeholder="correo@tucorreo.com">
+
+                    <textarea id="comment" name="comment" cols="30" rows="5"
+                        placeholder="Deja tu comentario"></textarea>
+                    <!-- <div class="formdiv"> -->
+                        <label for="file">
+                            Subir Cv
+                            <input id="file" type="file" name="subir" class="file">
+                        </label>
+                        <input id="send" type="submit" value="Enviar">
+                        <input id="reset" type="reset" value="Restablecer">
+                    <!-- </div> -->
+                </fieldset>
+            </form>
         </section>
     </main>
     <!-- fin de contenido -->

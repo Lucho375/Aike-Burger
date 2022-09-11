@@ -1,4 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,100&display=swap");
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(237, 177, 38, 0.7803921569);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(42, 41, 41, 0.7960784314);
+  border-radius: 1px;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(237, 177, 38, 0.7803921569);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(42, 41, 41, 0.7960784314);
+  border-radius: 1px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -54,19 +80,6 @@ body::after {
 
 .main {
   margin: 150px 20px 20px 20px;
-}
-
-body::-webkit-scrollbar {
-  width: 8px;
-}
-
-body::-webkit-scrollbar-track {
-  background: rgba(237, 177, 38, 0.7803921569);
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: rgba(42, 41, 41, 0.7960784314);
-  border-radius: 1px;
 }
 
 .header {
@@ -386,14 +399,14 @@ textarea {
 }
 .rrhh form .fieldset #send {
   margin-top: 10px;
-  transition: all 0.3s;
+  transition: scale 500ms;
 }
 .rrhh form .fieldset #send:hover {
   scale: 1.05;
   background-color: #edb026 !important;
 }
 .rrhh form .fieldset #reset {
-  transition: all 0.3s;
+  transition: scale 500ms;
 }
 .rrhh form .fieldset #reset:hover {
   scale: 1.05;
@@ -421,7 +434,7 @@ textarea {
 .rrhh form .fieldset label:hover {
   scale: 1.05;
   background-color: #edb026 !important;
-  transition: scale 0.3s;
+  transition: scale 500ms;
 }
 .rrhh form .fieldset .file {
   display: none;
@@ -613,6 +626,7 @@ textarea {
     text-align: center;
   }
   .rrhh form {
+    font-size: 0.7rem;
     width: 100%;
     padding: 0;
   }

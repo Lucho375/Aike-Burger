@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tenemos 15 variedades de hamburguesa, podes pagar con mercado pago, tarjetas, efectivo etc.">
+    <meta name="description"
+        content="Tenemos 15 variedades de hamburguesa, podes pagar con mercado pago, tarjetas, efectivo etc.">
     <meta name="keywords" content="coca, sprite, fanta, cerveza, cerveza tirada, cerveza artesanal">
     <link rel="shortcut icon" href="../assets/img/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -45,131 +46,45 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./contacto.html">Contacto</a>
                         </li>
+                        <li class="nav-item">
+                            <button class="botonCarrito" id="mostrarCarro"><i class="fa-solid fa-cart-shopping"><span
+                                        id="cantidadEnElCarrito"></span></i></button>
+                        </li>
                     </ul>
                 </div>
             </div>
+            <div class="noMostrar index animate__animated" id="noMostrar">
+                <table class="prueba">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="carritoContainer"></tbody>
+                </table>
+                <h5 id="total"></h5>
+                <button class="btn btn-danger float-end" id="comprar">Finalizar compra</button>
+            </div>
         </nav>
     </header>
+
     <!-- fin de barra -->
 
     <!-- contenido principal -->
     <main class="main">
-        <section>
+        <section id="burgers">
             <h1>Hamburguesas</h1>
-            <div class="prod jumbotron">
-                <div>
-                    <h3>1/4 de Aike</h3>
-                    <p>Hamburguesa con queso cheddar, cebolla brunoise y salsa 1/4.</p>
-                    <a href="#"><p class="precio">$1450</p></a>
-                </div>
-                <div>
-                    <img src="../assets/img/img5.jpg" alt="1/4 de aike">
-                </div>
-            </div>
-            <div class="prod jumbotron">
-                <div>
-                    <h3>Aike Burger</h3>
-                    <p>Hamburguesa con queso cheddar, bacon, cebolla crispy y salsa mil islas.</p>
-                    <a href="#"><p class="precio">$1450</p></a>
-                </div>
-                <div>
-                    <img src="../assets/img/img6.jpg" alt="aike burger">
-                </div>
-            </div>
-            <div class="prod jumbotron">
-                <div>
-                    <h3>Aike Clasica</h3>
-                    <p>Hamburguesa con queso cheddar, lechuga, tomate, cebolla, pepinillos y salsa mil islas.</p>
-                    <a href="#"><p class="precio">$1450</p></a>
-                </div>
-                <div>
-                    <img src="../assets/img/img4.jpg" alt="aike clasica">
-                </div>
-            </div>
-            <div class="prod jumbotron">
-                <div>
-                    <h3>Aike Fungi</h3>
-                    <p>Hamburguesa con queso danbo y champiñones salteados en manteca.</p>
-                    <a href="#"><p class="precio">$1450</p></a>
-                </div>
-                <div>
-                    <img src="../assets/img/img2.jpg" alt="aike fungi">
-                </div>
-            </div>
-            <section>
-                <h2>Adicionales</h2>
-                <div>
-                    <div class="prod jumbotron">
-                        <div>
-                            <h3>Papas fritas</h3>
-                            <p>Porción de papas fritas</p>
-                            <a href="#"><p class="precio">$450</p></a>
-                        </div>
-                        <div>
-                            <img src="../assets/img/fritas.jpg" alt="papas fritas">
-                        </div>
-                    </div>
-                    <div class="prod jumbotron">
-                        <div>
-                            <h3>Papas fritas con cheddar</h3>
-                            <p>Porción de papas fritas con cheddar</p>
-                            <a href="#"><p class="precio">$750</p></a>
-                        </div>
-                        <div>
-                            <img src="../assets/img/fritascc.jpg" alt="papas fritas con cheddar">
-                        </div>
-                    </div>
-                    <div class="prod jumbotron">
-                        <div>
-                            <h3>Papas fritas con cheddar, bacon y verdeo</h3>
-                            <p>Porción de papas fritas con cheddar, bacon y verdeo.</p>
-                            <a href="#"><p class="precio">$850</p></a>
-                        </div>
-                        <div>
-                            <img src="../assets/img/papascbv.jpg" alt="papas fritas con cheddar bacon y verdeo">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <h2>Bebidas</h2>
-                <div class="prod jumbotron">
-                    <div>
-                        <h3>Coca-Cola</h3>
-                        <a href="#"><p class="precio">$250</p></a>
-                    </div>
-                    <div>
-                        <img src="../assets/img/coca_lata.jpg" alt="lata coca cola">
-                    </div>
-                </div>
-                <div class="prod jumbotron">
-                    <div>
-                        <h3>Sprite</h3>
-                        <a href="#"><p class="precio">$250</p></a>
-                    </div>
-                    <div>
-                        <img src="../assets/img/sprite_lata.jpg" alt="lata sprite">
-                    </div>
-                </div>
-                <div class="prod jumbotron">
-                    <div>
-                        <h3>Fanta</h3>
-                        <a href="#"><p class="precio">$250</p></a>
-                    </div>
-                    <div>
-                        <img src="../assets/img/fanta_lata.jpg" alt="lata fanta">
-                    </div>
-                </div>
-                <div class="prod jumbotron">
-                    <div>
-                        <h3>Paso de los toros</h3>
-                        <a href="#"><p class="precio">$250</p></a>
-                    </div>
-                    <div>
-                        <img src="../assets/img/pdlt_lata.jpg" alt="lata paso de los toros pomelo">
-                    </div>
-                </div>
-            </section>
+        </section>
+
+        <section id="papas">
+            <h2>Adicionales</h2>
+        </section>
+
+        <section id="bebidas">
+            <h2>Bebidas</h2>
         </section>
     </main>
     <!-- fin de contenido -->
@@ -194,6 +109,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../productos.js"></script>
+    <script src="../app.js"></script>
 </body>
 
 </html>

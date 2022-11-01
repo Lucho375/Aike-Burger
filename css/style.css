@@ -24,6 +24,77 @@ body::-webkit-scrollbar-thumb {
   background-color: rgba(42, 41, 41, 0.7960784314);
   border-radius: 1px;
 }
+/* pruebaa */
+#carritoContainer{
+  padding: 100px;
+  background-color: #000;
+}
+
+.swalHeight{
+  height: 500px;
+  background-color: red !important;
+}
+
+.prueba thead{
+  background-color: #000;
+  padding: 5px;
+}
+
+#imgCarrito{
+  width: 80px;
+  padding: 5px;
+}
+
+.btn-add{
+  width: 100px;
+  font-size: 25px;
+}
+
+.fa-cart-plus{
+  color: black;
+}
+
+.noMostrar{
+  display: none;
+}
+.index{
+  position: absolute;
+  top: 125px;
+  right: 0px;
+  width: 500px;
+}
+
+#total{
+  background-color: #000;
+  padding: 5px;
+}
+
+.prueba{
+  width: 100%;
+  padding: 5px;
+  /* position: fixed; */
+}
+#cantidadEnElCarrito{
+  color: #edb026;
+  font-size: 15px;
+  position: absolute;
+  top: 10;
+  bottom: 48px;
+}
+.botonCarrito{
+  background-color: transparent;
+  margin-left: 20px;
+}
+.fa-cart-shopping{
+  color: #edb026;
+  padding: 7px;
+  font-size: 30px;
+}
+.precio{
+  text-align: left !important;
+  font-size: 20px !important;
+}
+/* pruebaa JS */
 
 * {
   padding: 0;

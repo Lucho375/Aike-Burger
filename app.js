@@ -76,19 +76,6 @@ function renderizarProductos() {
 }
 
 renderizarProductos();
-//  animate__animated animate__backInRight    animate__backOutRight
-
-// Funcion para mostrar carrito
-// mostrarCarrito.addEventListener("click", () => {
-//     if (noMostrar.classList.contains("noMostrar")) {
-//         noMostrar.classList.remove("noMostrar");
-//     } else {
-//         noMostrar.classList.add("noMostrar");
-//     }
-// });
-
-
-
 mostrarCarrito.addEventListener("click", () => {
 
     if (noMostrar.classList.contains("noMostrar")) {

@@ -7,7 +7,7 @@ const mostrarCarrito = document.getElementById("mostrarCarro");
 const noMostrar = document.getElementById("noMostrar");
 const totalCarrito = document.getElementById("total");
 const cantidadEnElCarrito = document.getElementById("cantidadEnElCarrito");
-const comprar = document.getElementById("comprar");
+const finalizarCompra = document.getElementById("comprar");
 let final;
 
 // array de carrito
@@ -182,7 +182,7 @@ function actualizarCarrito() {
     guardarStorage();
 }
 
-comprar.onclick = () => {
+finalizarCompra.onclick = () => {
     if (cart == 0) {
         Swal.fire('El carrito esta vacio')
     } else {

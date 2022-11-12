@@ -2,7 +2,9 @@
     border: $maincolor 1px solid;
     background-color: #2A2929;
     color: white;
-
+    &:-webkit-autofill{
+        background-color: black;
+    }
 }
 
 input {
@@ -26,12 +28,35 @@ textarea {
 
 .warning{
     color: red;
-    background-color: #000;
-    display: inline-block;
-    padding: 5px;
-    margin: 5px;
+    margin-top: 5px;
 }
 
 .display-none{
     display: none;
+}
+
+.invalidInput{
+    border:  1px solid red;
+    animation-name: error;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+@keyframes error{
+    0%{translate: 5px;}
+    25%{translate: -5px;}
+    50%{translate: 5px;}
+    75%{translate: -5px}
+    100%{translate: 5px}
+    // 0%{rotate: 1deg;}
+    // 25%{rotate: -1deg;}
+    // 50%{rotate: 1deg;}
+    // 75%{rotate: -1deg}
+    // 100%{rotate: 1deg}
+}
+
+#contactForm{
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
 }

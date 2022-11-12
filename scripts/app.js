@@ -125,7 +125,7 @@ function guardarStorage() {
 }
 
 function renderizarProductosCarrito() {
-
+    //Renderiza los productos ya existentes en el carrito
     carritoContainer.innerHTML = "";
     cart.forEach(producto => {
         carritoContainer.innerHTML += `
@@ -188,9 +188,9 @@ finalizarCompra.onclick = () => {
     } else {
         Swal.fire('Gracias por su compra')
         cart = [];
-        guardarStorage();
         renderizarProductosCarrito();
         actualizarCarrito();
+        localStorage.removeItem("carrito");
     }
 }
 

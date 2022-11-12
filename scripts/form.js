@@ -40,7 +40,6 @@ function validForm(event) {
         formEmail.nextElementSibling.className = "display-none";
     }
 
-
     formName.addEventListener("animationend", () => {
         formName.classList.remove("invalidInput");
     })

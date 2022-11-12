@@ -19,11 +19,7 @@ let cart = JSON.parse(localStorage.getItem("carrito")) || [];
     PRODUCTOS = await response.json();
     agregarIva(PRODUCTOS);
     renderizarProductos(PRODUCTOS);
-
-    //Si hay productos en el carrito, renderizarlos
-    if(cart.length > 0){
-        actualizarCarrito();
-    }
+    actualizarCarrito();
 })();
 
 //Agregar iva a todos los productos del array PRODUCTOS

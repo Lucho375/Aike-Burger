@@ -118,6 +118,7 @@ function agregarAlCarrito(producto) {
     actualizarCarrito();
 }
 
+
 // Funcion para guardar carrito en storage
 function guardarStorage() {
         localStorage.setItem("carrito", JSON.stringify(cart))
@@ -126,7 +127,7 @@ function guardarStorage() {
 function renderizarProductosCarrito() {
 
     carritoContainer.innerHTML = "";
-    cart.map(producto => {
+    cart.forEach(producto => {
         carritoContainer.innerHTML += `
         <tr id="itemCarrito${producto.id}">
             <th><img src=${producto.imagen} id="imgCarrito"> ${producto.nombre}</th>

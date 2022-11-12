@@ -98,6 +98,7 @@ mostrarCarrito.addEventListener("click", () => {
         noMostrar.classList.remove("animate__backInRight");
         noMostrar.classList.add("animate__backOutRight");
         setTimeout(() => {
+            //Borrar la clase de backOutRight al salir para no causar error al volver a entrar
             noMostrar.classList.add("noMostrar");
             noMostrar.classList.remove("animate__backOutRight");
         }, 300)

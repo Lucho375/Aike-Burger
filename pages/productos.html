@@ -51,23 +51,25 @@
                                         id="cantidadEnElCarrito"></span></i></button>
                         </li>
                     </ul>
+                    <div class="noMostrar index" id="noMostrar">
+                        <table class="prueba">
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="carritoContainer"></tbody>
+                        </table>
+                        <h5 id="total"></h5>
+                        <button class="btn btn-danger float-end" id="comprar">Finalizar compra</button>
+                    </div>
                 </div>
-            </div>
-            <div class="noMostrar index animate__animated" id="noMostrar">
-                <table class="prueba">
-                    <thead>
-                        <tr>
-                            <th>Producto</th>
-                            <th>Precio</th>
-                            <th>Cantidad</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody id="carritoContainer"></tbody>
-                </table>
-                <h5 id="total"></h5>
-                <button class="btn btn-danger float-end" id="comprar">Finalizar compra</button>
-            </div>
+                </div>
+
+
         </nav>
     </header>
 
@@ -110,7 +112,6 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../productos.js"></script>
     <script src="../app.js"></script>
 </body>
 

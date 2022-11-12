@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "nombre": "1/4 de Aike",
+        "desc": "Hamburguesa con queso cheddar, cebolla brunoise y salsa 1/4.",
+        "imagen": "../assets/img/img5.jpg",
+        "precio": 1499,
+        "tipo": "hamburguesa"
+    },
+    {
+        "id": 2,
+        "nombre": "Aike Burger",
+        "desc": "Hamburguesa con queso cheddar, bacon, cebolla crispy y salsa mil islas.",
+        "imagen": "../assets/img/img6.jpg",
+        "precio": 1250,
+        "tipo": "hamburguesa"
+    },
+    {
+        "id": 3,
+        "nombre": "Aike Clasica",
+        "desc": "Hamburguesa con queso cheddar, lechuga, tomate, cebolla, pepinillos y salsa mil islas.",
+        "imagen": "../assets/img/img4.jpg",
+        "precio": 1100,
+        "tipo": "hamburguesa"
+    },
+    {
+        "id": 4,
+        "nombre": "Aike Fungi",
+        "desc": "Hamburguesa con queso danbo y champiñones salteados en manteca.",
+        "imagen": "../assets/img/img2.jpg",
+        "precio": 1200,
+        "tipo": "hamburguesa"
+    },
+    {
+        "id": 5,
+        "nombre": "Papas fritas",
+        "desc": "Porción de papas fritas",
+        "imagen": "../assets/img/fritas.jpg",
+        "precio": 450,
+        "tipo": "papas"
+    },
+    {
+        "id": 6,
+        "nombre": "Papas fritas con cheddar",
+        "desc": "Porción de papas fritas con cheedar",
+        "imagen": "../assets/img/fritascc.jpg",
+        "precio": 750,
+        "tipo": "papas"
+    },
+    {
+        "id": 7,
+        "nombre": "Papas fritas con cheddar, bacon y verdeo",
+        "desc": "Porción de papas fritas con cheddar, bacon y verdeo.",
+        "imagen": "../assets/img/papascbv.jpg",
+        "precio": 750,
+        "tipo": "papas"
+    },
+    {
+        "id": 8,
+        "nombre": "Coca-Cola",
+        "desc": "bebida de cola gasificada",
+        "imagen": "../assets/img/coca_lata.jpg",
+        "precio": 250,
+        "tipo": "bebida"
+    },
+    {
+        "id": 9,
+        "nombre": "Sprite",
+        "desc": "bebida de limalimon gasificada",
+        "imagen": "../assets/img/sprite_lata.jpg",
+        "precio": 250,
+        "tipo": "bebida"
+    },
+    {
+        "id": 10,
+        "nombre": "Fanta",
+        "desc": "bebida de naranja gasificada",
+        "imagen": "../assets/img/fanta_lata.jpg",
+        "precio": 250,
+        "tipo": "bebida"
+    },
+    {
+        "id": 11,
+        "nombre": "Paso de los toros",
+        "desc": "bebida de pomelo gasificada",
+        "imagen": "../assets/img/pdlt_lata.jpg",
+        "precio": 250,
+        "tipo": "bebida"
+    }
+]
